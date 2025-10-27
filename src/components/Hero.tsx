@@ -42,10 +42,11 @@ const Hero = () => {
           <div className="animate-fade-in-up animation-delay-400 flex justify-center px-4">
             <Button 
               size="lg" 
-              className="group text-sm sm:text-base lg:text-lg px-6 sm:px-8 lg:px-10 py-5 sm:py-6 lg:py-7 bg-white text-primary hover:bg-white/90 transition-all duration-300 hover:scale-105 shadow-elegant rounded-full font-semibold w-full sm:w-auto text-center"
+              className="group text-xs sm:text-sm md:text-base lg:text-lg px-4 sm:px-6 md:px-8 lg:px-10 py-4 sm:py-5 md:py-6 lg:py-7 bg-white text-primary hover:bg-white/90 transition-all duration-300 hover:scale-105 shadow-elegant rounded-full font-semibold w-full max-w-sm sm:max-w-md md:max-w-none md:w-auto text-center leading-tight"
             >
-              <span className="block sm:inline">Conheça nossa história e empreendimentos</span>
-              <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform inline-block" aria-hidden="true" />
+              <span className="block">Conheça nossa história</span>
+              <span className="block">e empreendimentos</span>
+              <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 group-hover:translate-x-1 transition-transform inline-block mt-1" aria-hidden="true" />
             </Button>
           </div>
         </div>
