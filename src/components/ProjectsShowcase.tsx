@@ -2,9 +2,9 @@ import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/ca
 import { Badge } from "@/components/ui/badge";
 import liberdade15 from "@/assets/liberdade-15.jpg";
 import housingParanaiba from "@/assets/housing-paranaiba.jpg";
-import europaReady from "@/assets/europa-ready.jpg";
+import residencialJardimEuropa from "@/assets/residencial-jardim-europa.jpg";
 
-type ProjectStatus = "Em Oferta" | "Em Obras" | "Prontos para Morar";
+type ProjectStatus = "Em Oferta" | "Em Obras" | "Obra entregue";
 
 interface Project {
   id: number;
@@ -31,10 +31,10 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Residencial Europa",
+    title: "Residencial Jardim Europa",
     description: "Um novo padrão de qualidade de vida com infraestrutura completa.",
-    status: "Prontos para Morar",
-    image: europaReady,
+    status: "Obra entregue",
+    image: residencialJardimEuropa,
   },
 ];
 
