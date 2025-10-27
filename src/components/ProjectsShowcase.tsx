@@ -62,6 +62,7 @@ const ProjectsShowcase = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {projects.map((project) => {
             const isHousingParanaiba = project.id === 2;
+            const isLiberdade15 = project.id === 1;
             const projectLink = isHousingParanaiba ? "https://housingparanaiba.com.br" : undefined;
             return (
               <Card 
@@ -69,7 +70,13 @@ const ProjectsShowcase = () => {
                 className="group overflow-hidden hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-card border-border"
               >
                 <div className="relative h-64 overflow-hidden">
-                  {projectLink ? (
+                  {isLiberdade15 ? (
+                    <div className="w-full h-full bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center p-8">
+                      <h3 className="text-3xl sm:text-4xl font-bold text-white text-center leading-tight">
+                        Residencial<br />Liberdade 15
+                      </h3>
+                    </div>
+                  ) : projectLink ? (
                     <a href={projectLink} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
                       <img 
                         src={project.image} 
