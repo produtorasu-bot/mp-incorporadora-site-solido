@@ -1,4 +1,4 @@
-import { Target, Eye, Heart, Award, Landmark, TrendingUp, Users2, Sparkles } from "lucide-react";
+import { Target, Eye, Heart, Award, Landmark, TrendingUp, Users2, Sparkles, Compass, Telescope, Gem, ShieldCheck } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -27,28 +27,28 @@ const NossaHistoria = () => {
 
   const philosophy = [
     {
-      icon: Target,
+      icon: Compass,
       title: "Missão",
       description: "Buscar excelência na construção e comercialização de empreendimentos, superando as expectativas dos nossos clientes, garantindo a entrega rápida e a qualidade do produto final.",
       color: "bg-primary/10",
       iconColor: "text-primary",
     },
     {
-      icon: Eye,
+      icon: Telescope,
       title: "Visão",
       description: "Ser uma empresa referência em qualidade, inovação e confiança em Itumbiara e região.",
       color: "bg-accent/10",
       iconColor: "text-accent",
     },
     {
-      icon: Heart,
+      icon: Gem,
       title: "Valores",
       description: "Sustentabilidade, Excelência e Respeito guiam cada decisão e cada projeto que realizamos.",
       color: "bg-primary/10",
       iconColor: "text-primary",
     },
     {
-      icon: Award,
+      icon: ShieldCheck,
       title: "Política de Qualidade",
       description: "Construir obras com qualidade, alcançando a satisfação dos nossos clientes por meio da melhoria contínua dos processos, inovação e comprometimento com a sustentabilidade.",
       color: "bg-accent/10",
@@ -77,11 +77,13 @@ const NossaHistoria = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center text-white">
             <div className="flex justify-center mb-8 animate-fade-in">
-              <img 
-                src={logo} 
-                alt="MP Incorporadora" 
-                className="h-20 sm:h-24 w-auto drop-shadow-2xl"
-              />
+              <div className="bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-2xl">
+                <img 
+                  src={logo} 
+                  alt="MP Incorporadora" 
+                  className="h-16 sm:h-20 w-auto"
+                />
+              </div>
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
               Nossa História
