@@ -20,46 +20,39 @@ const OurCommitment = () => {
   ];
 
   return (
-    <section className="py-24 relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-1/4 right-10 w-72 h-72 bg-accent rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-1/4 left-10 w-72 h-72 bg-primary rounded-full blur-3xl animate-float animation-delay-400" />
-      </div>
-      
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section className="py-20 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-20 animate-fade-in-up">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-            <span className="text-gradient">O alicerce do nosso sucesso</span>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
+            O alicerce do nosso sucesso
           </h2>
-          <div className="w-32 h-1.5 gradient-primary mx-auto rounded-full shadow-glow" />
+          <div className="w-24 h-1 bg-primary mx-auto" />
         </div>
 
         {/* Three Columns */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {commitments.map((item, index) => {
             const Icon = item.icon;
             return (
               <div 
                 key={index}
-                className="group p-10 glass-card rounded-3xl border-2 border-border hover:border-primary/50 hover:shadow-3d transition-all duration-500 hover:-translate-y-2 animate-fade-in-up"
-                style={{ animationDelay: `${index * 150}ms` }}
+                className="group p-8 bg-card rounded-xl border border-border hover:border-primary hover:shadow-elegant transition-all duration-300"
               >
                 {/* Icon */}
-                <div className="mb-8 flex justify-center">
-                  <div className="w-20 h-20 gradient-primary rounded-2xl flex items-center justify-center group-hover:shadow-glow transition-all duration-500 group-hover:scale-110 rotate-6 group-hover:rotate-12">
-                    <Icon className="w-10 h-10 text-white" />
+                <div className="mb-6 flex justify-center">
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <Icon className="w-8 h-8 text-primary" />
                   </div>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-2xl sm:text-3xl font-bold text-foreground text-center mb-5">
+                <h3 className="text-2xl font-bold text-foreground text-center mb-4">
                   {item.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-muted-foreground text-center leading-relaxed text-base">
+                <p className="text-muted-foreground text-center leading-relaxed">
                   {item.description}
                 </p>
               </div>
