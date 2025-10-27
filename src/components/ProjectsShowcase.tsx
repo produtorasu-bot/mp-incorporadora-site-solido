@@ -48,7 +48,7 @@ const projects: Project[] = [
 
 const ProjectsShowcase = () => {
   return (
-    <section className="py-12 sm:py-16 md:py-20 bg-secondary">
+    <section id="empreendimentos" className="py-12 sm:py-16 md:py-20 bg-secondary scroll-mt-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <header className="text-center mb-8 sm:mb-12">

@@ -43,6 +43,12 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="group text-xs sm:text-sm md:text-base lg:text-lg px-4 sm:px-6 md:px-8 lg:px-10 py-4 sm:py-5 md:py-6 lg:py-7 bg-white text-primary hover:bg-white/90 transition-all duration-300 hover:scale-105 shadow-elegant rounded-full font-semibold w-full max-w-sm sm:max-w-md md:max-w-none md:w-auto text-center leading-tight"
+              onClick={() => {
+                const projectsSection = document.querySelector('#empreendimentos');
+                if (projectsSection) {
+                  projectsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }}
             >
               <span className="block">Conheça nossa história</span>
               <span className="block">e empreendimentos</span>
