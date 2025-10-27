@@ -1,4 +1,5 @@
-import { Target, Eye, Heart, Award, Building2, TrendingUp, Users } from "lucide-react";
+import { Target, Eye, Heart, Award, Landmark, TrendingUp, Users2, Sparkles } from "lucide-react";
+import logo from "@/assets/logo.png";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const NossaHistoria = () => {
@@ -7,20 +8,20 @@ const NossaHistoria = () => {
       year: "2013",
       title: "Nosso Início",
       description: "A MP Incorporadora foi fundada em 2013 em Itumbiara, Goiás, com um objetivo claro: oferecer moradias de qualidade com preços acessíveis para a comunidade local.",
-      icon: Building2,
+      icon: Landmark,
     },
     {
       year: "2013-2018",
       title: "Construindo Confiança",
       subtitle: "Primeiros Anos",
       description: "Nos primeiros anos, focamos em empreendimentos populares. Entregamos centenas de unidades habitacionais e construímos um relacionamento sólido de confiança com nossos clientes e com a comunidade de Itumbiara.",
-      icon: Users,
+      icon: Users2,
     },
     {
       year: "2019-Presente",
       title: "Crescimento e Evolução",
       description: "Com a confiança conquistada, expandimos nossa atuação para imóveis de médio e alto padrão. Hoje, trabalhamos também com condomínios verticais, oferecendo mais opções para diferentes perfis de clientes.",
-      icon: TrendingUp,
+      icon: Sparkles,
     },
   ];
 
@@ -64,8 +65,24 @@ const NossaHistoria = () => {
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-white rounded-full blur-3xl" />
         </div>
         
+        {/* Logo Watermark */}
+        <div className="absolute inset-0 flex items-center justify-center opacity-5">
+          <img 
+            src={logo} 
+            alt="MP Incorporadora" 
+            className="w-[600px] h-auto"
+          />
+        </div>
+        
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center text-white">
+            <div className="flex justify-center mb-8 animate-fade-in">
+              <img 
+                src={logo} 
+                alt="MP Incorporadora" 
+                className="h-20 sm:h-24 w-auto drop-shadow-2xl"
+              />
+            </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
               Nossa História
             </h1>
@@ -99,9 +116,9 @@ const NossaHistoria = () => {
                     <div className="flex-1 w-full">
                       <Card className="hover:shadow-elegant transition-all duration-300 border-border">
                         <CardHeader>
-                          <div className="flex items-start gap-4">
-                            <div className={`w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 ${item.icon === Building2 ? 'bg-primary/10' : item.icon === Users ? 'bg-accent/10' : 'bg-primary/10'}`}>
-                              <Icon className={`w-8 h-8 ${item.icon === Building2 ? 'text-primary' : item.icon === Users ? 'text-accent' : 'text-primary'}`} />
+                           <div className="flex items-start gap-4">
+                            <div className={`w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 ${item.icon === Landmark ? 'bg-primary/10' : item.icon === Users2 ? 'bg-accent/10' : 'bg-primary/10'}`}>
+                              <Icon className={`w-8 h-8 ${item.icon === Landmark ? 'text-primary' : item.icon === Users2 ? 'text-accent' : 'text-primary'}`} />
                             </div>
                             <div className="flex-1">
                               <div className="text-sm font-semibold text-primary mb-2">{item.year}</div>
