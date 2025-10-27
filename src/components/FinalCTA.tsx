@@ -28,9 +28,16 @@ const FinalCTA = () => {
               size="lg" 
               variant="secondary"
               className="group text-lg px-10 py-6 hover:scale-105 transition-all duration-300 shadow-xl"
+              asChild
             >
-              <Phone className="mr-2 h-5 w-5" />
-              Fale com um consultor
+              <a 
+                href="https://wa.me/5564992433094?text=Oi,%20vim%20do%20site%20da%20MP%20e%20quero%20conhecer%20os%20empreendimentos!" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Phone className="mr-2 h-5 w-5" />
+                Fale com um consultor
+              </a>
             </Button>
           </div>
 
@@ -39,19 +46,23 @@ const FinalCTA = () => {
             <div className="flex flex-col items-center space-y-2">
               <Phone className="w-8 h-8" />
               <div className="text-sm font-semibold">Telefone</div>
-              <div className="text-white/80">(62) 3000-0000</div>
+              <div className="text-white/80">(64) 9 9243-3094</div>
             </div>
 
             <div className="flex flex-col items-center space-y-2">
               <Mail className="w-8 h-8" />
               <div className="text-sm font-semibold">E-mail</div>
-              <div className="text-white/80">contato@mpincorporadora.com.br</div>
+              <div className="text-white/80">comercail@mpincorporadora.com.br</div>
             </div>
 
             <div className="flex flex-col items-center space-y-2">
               <MapPin className="w-8 h-8" />
               <div className="text-sm font-semibold">Localização</div>
-              <div className="text-white/80">Goiânia, GO</div>
+              <div className="text-white/80 text-center">
+                Avenida Osvaldo Cruz, Sala 85<br />
+                Setor Rodoviário, Afonso Pena<br />
+                Itumbiara, Goiás
+              </div>
             </div>
           </div>
         </div>
