@@ -40,10 +40,12 @@ const OurJourney = () => {
               </p>
 
               <div className="pt-4">
-                <Button size="lg" variant="default" className="group">
-                  Conheça nossa história
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
+                <a href="/nossa-historia">
+                  <Button size="lg" variant="default" className="group">
+                    Conheça nossa história
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
