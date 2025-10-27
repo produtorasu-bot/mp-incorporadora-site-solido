@@ -1,6 +1,5 @@
 import { Target, Eye, Heart, Award, Landmark, TrendingUp, Users2, Sparkles, Compass, Telescope, Gem, ShieldCheck } from "lucide-react";
 import logo from "@/assets/logo.png";
-import itumbiaraAerial from "@/assets/itumbiara-aerial.jpg";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const NossaHistoria = () => {
@@ -60,15 +59,11 @@ const NossaHistoria = () => {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative py-24 overflow-hidden">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${itumbiaraAerial})` }}
-        />
-        
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/85 to-accent/90" />
+      <section className="relative py-24 bg-gradient-to-br from-primary to-accent overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 left-20 w-96 h-96 bg-white rounded-full blur-3xl" />
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-white rounded-full blur-3xl" />
+        </div>
         
         {/* Logo Watermark */}
         <div className="absolute inset-0 flex items-center justify-center opacity-5">
