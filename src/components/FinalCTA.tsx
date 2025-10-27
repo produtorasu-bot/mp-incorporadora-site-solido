@@ -57,8 +57,8 @@ const FinalCTA = () => {
             <address className="flex flex-col items-center space-y-2 not-italic">
               <Mail className="w-6 h-6 sm:w-8 sm:h-8" aria-hidden="true" />
               <div className="text-sm font-semibold">E-mail</div>
-              <a href="mailto:comercail@mpincorporadora.com.br" className="text-sm sm:text-base text-white/80 hover:text-white transition-colors">
-                comercail@mpincorporadora.com.br
+              <a href="mailto:comercial@mpincorporadora.com.br" className="text-sm sm:text-base text-white/80 hover:text-white transition-colors">
+                comercial@mpincorporadora.com.br
               </a>
             </address>
 

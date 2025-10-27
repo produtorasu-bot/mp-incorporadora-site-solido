@@ -9,9 +9,9 @@ const OurJourney = () => {
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             {/* Left Column - Badge */}
             <div className="flex justify-center lg:justify-start order-2 lg:order-1">
-              <div className="bg-gradient-to-br from-accent to-primary text-white rounded-2xl w-56 h-56 sm:w-64 sm:h-64 flex flex-col items-center justify-center shadow-elegant glass-card">
+              <div className="bg-gradient-to-br from-accent to-primary text-white rounded-2xl p-8 sm:p-12 flex flex-col items-center justify-center shadow-elegant">
                 <div className="text-6xl sm:text-7xl font-bold mb-2">10+</div>
-                <div className="text-lg sm:text-xl font-semibold text-center">Anos de<br/>Experiência</div>
+                <div className="text-lg sm:text-xl font-semibold text-center whitespace-nowrap">Anos de Experiência</div>
               </div>
             </div>
 

@@ -29,23 +29,23 @@ const Hero = () => {
           </div>
 
           {/* Title */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 animate-fade-in-up leading-tight text-center">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 animate-fade-in-up leading-tight text-center px-2">
             MP Incorporadora
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg sm:text-xl lg:text-2xl text-white/90 mb-8 sm:mb-12 max-w-2xl mx-auto animate-fade-in-up animation-delay-200 text-center">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-8 sm:mb-12 max-w-2xl mx-auto animate-fade-in-up animation-delay-200 text-center px-4">
             Desde 2013, sinônimo de excelência e inovação em empreendimentos imobiliários.
           </p>
 
           {/* CTA Button */}
-          <div className="animate-fade-in-up animation-delay-400 flex justify-center">
+          <div className="animate-fade-in-up animation-delay-400 flex justify-center px-4">
             <Button 
               size="lg" 
-              className="group text-base sm:text-lg px-8 sm:px-10 py-6 sm:py-7 bg-white text-primary hover:bg-white/90 transition-all duration-300 hover:scale-105 shadow-elegant rounded-full font-semibold w-full sm:w-auto"
+              className="group text-sm sm:text-base lg:text-lg px-6 sm:px-8 lg:px-10 py-5 sm:py-6 lg:py-7 bg-white text-primary hover:bg-white/90 transition-all duration-300 hover:scale-105 shadow-elegant rounded-full font-semibold w-full sm:w-auto text-center"
             >
-              Conheça nossa história e empreendimentos
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
+              <span className="block sm:inline">Conheça nossa história e empreendimentos</span>
+              <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform inline-block" aria-hidden="true" />
             </Button>
           </div>
         </div>
