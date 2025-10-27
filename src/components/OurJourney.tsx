@@ -7,16 +7,16 @@ const OurJourney = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
-            {/* Left Column - Badge */}
-            <div className="flex justify-center lg:justify-start order-2 lg:order-1">
+            {/* Badge - Primeiro no mobile, segundo no desktop */}
+            <div className="flex justify-center lg:justify-start order-1 lg:order-2">
               <div className="bg-gradient-to-br from-accent to-primary text-white rounded-2xl p-8 sm:p-12 flex flex-col items-center justify-center shadow-elegant">
                 <div className="text-6xl sm:text-7xl font-bold mb-2">10+</div>
                 <div className="text-lg sm:text-xl font-semibold text-center whitespace-nowrap">Anos de Experiência</div>
               </div>
             </div>
 
-            {/* Right Column - Content */}
-            <div className="space-y-4 sm:space-y-6 order-1 lg:order-2">
+            {/* Content - Segundo no mobile, primeiro no desktop */}
+            <div className="space-y-4 sm:space-y-6 order-2 lg:order-1">
               <header>
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
                   Mais de uma década de evolução
