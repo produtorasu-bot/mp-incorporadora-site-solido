@@ -1,6 +1,5 @@
 import Hero from "@/components/Hero";
 import ProjectsShowcase from "@/components/ProjectsShowcase";
-import TrustPillar from "@/components/TrustPillar";
 import OurJourney from "@/components/OurJourney";
 import OurCommitment from "@/components/OurCommitment";
 import FinalCTA from "@/components/FinalCTA";
@@ -10,7 +9,6 @@ const Index = () => {
     <main className="min-h-screen">
       <Hero />
       <ProjectsShowcase />
-      <TrustPillar />
       <OurJourney />
       <OurCommitment />
       <FinalCTA />

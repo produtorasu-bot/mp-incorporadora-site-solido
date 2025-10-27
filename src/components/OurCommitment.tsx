@@ -1,19 +1,19 @@
-import { Target, Heart, Award } from "lucide-react";
+import { Compass, Gem, Trophy } from "lucide-react";
 
 const OurCommitment = () => {
   const commitments = [
     {
-      icon: Target,
+      icon: Compass,
       title: "Missão",
       description: "Buscar excelência na construção e comercialização de empreendimentos, superando as expectativas dos nossos clientes.",
     },
     {
-      icon: Heart,
+      icon: Gem,
       title: "Valores",
       description: "Sustentabilidade, Excelência e Respeito guiam cada decisão e cada projeto que realizamos.",
     },
     {
-      icon: Award,
+      icon: Trophy,
       title: "Política de Qualidade",
       description: "Construir obras com qualidade, alcançando a satisfação dos nossos clientes por meio da melhoria contínua dos processos e do comprometimento de toda a equipe.",
     },

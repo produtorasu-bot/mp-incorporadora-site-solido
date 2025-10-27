@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { TrendingUp, ArrowRight } from "lucide-react";
+import { Sparkles, ArrowRight } from "lucide-react";
 
 const OurJourney = () => {
   return (
@@ -11,7 +11,7 @@ const OurJourney = () => {
             <div className="flex justify-center lg:justify-start">
               <div className="relative">
                 <div className="w-64 h-64 bg-primary/10 rounded-full flex items-center justify-center">
-                  <TrendingUp className="w-32 h-32 text-primary" />
+                  <Sparkles className="w-32 h-32 text-primary" />
                 </div>
                 <div className="absolute -top-4 -right-4 bg-accent text-white rounded-full w-24 h-24 flex flex-col items-center justify-center shadow-elegant">
                   <div className="text-3xl font-bold">10+</div>
