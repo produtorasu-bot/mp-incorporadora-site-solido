@@ -1,10 +1,10 @@
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import liberdade15 from "@/assets/liberdade-15.jpg";
-import housingParanaiba from "@/assets/housing-paranaiba.jpg";
+import housingParanaiba from "@/assets/housing-paranaiba-entrance.jpg";
 import residencialJardimEuropa from "@/assets/residencial-jardim-europa.jpg";
 
-type ProjectStatus = "Em Oferta" | "Em Obras" | "Obra entregue";
+type ProjectStatus = "Em Oferta" | "Em Obras" | "Obra entregue" | "Oportunidade";
 
 interface Project {
   id: number;
@@ -25,8 +25,8 @@ const projects: Project[] = [
   {
     id: 2,
     title: "Housing Paranaíba",
-    description: "Pioneiro de casas prontas em condomínio fechado.",
-    status: "Em Oferta",
+    description: "Condomínio Fechado de Casas Prontas mais próximo do centro de Itumbiara-GO",
+    status: "Oportunidade",
     image: housingParanaiba,
   },
   {
