@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-residencial-europa.jpg";
+import heroImage from "@/assets/hero-background.jpg";
 import logo from "@/assets/logo.png";
 
 const Hero = () => {
@@ -15,7 +15,7 @@ const Hero = () => {
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/75 via-black/60 to-black/50" />
       </div>
 
       {/* Content */}
@@ -23,16 +23,20 @@ const Hero = () => {
         <div className="max-w-3xl">
           {/* Logo */}
           <div className="mb-8 animate-fade-in">
-            <img src={logo} alt="MP Incorporadora" className="h-20 sm:h-24 w-auto" />
+            <img 
+              src={logo} 
+              alt="MP Incorporadora" 
+              className="h-20 sm:h-24 w-auto drop-shadow-2xl" 
+            />
           </div>
 
           {/* Title */}
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in-up leading-tight">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in-up leading-tight drop-shadow-2xl">
             MP Incorporadora
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl sm:text-2xl text-white/90 mb-10 max-w-2xl animate-fade-in-up animation-delay-200">
+          <p className="text-xl sm:text-2xl text-white mb-10 max-w-2xl animate-fade-in-up animation-delay-200 drop-shadow-xl">
             Desde 2013, sinônimo de excelência e inovação em empreendimentos imobiliários.
           </p>
 
