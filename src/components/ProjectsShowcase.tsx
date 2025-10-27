@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import liberdade15 from "@/assets/liberdade-15.jpg";
 import housingParanaiba from "@/assets/housing-paranaiba-entrance.jpg";
 import residencialJardimEuropa from "@/assets/residencial-jardim-europa.jpg";
+import portalDoBuritis from "@/assets/portal-do-buritis.jpg";
 
 type ProjectStatus = "Em Oferta" | "Em Obras" | "Obra entregue" | "Oportunidade";
 
@@ -35,6 +36,13 @@ const projects: Project[] = [
     description: "Um novo padrão de qualidade de vida com infraestrutura completa.",
     status: "Obra entregue",
     image: residencialJardimEuropa,
+  },
+  {
+    id: 4,
+    title: "Portal do Buritis",
+    description: "Empreendimento moderno com apartamentos e casas de alto padrão.",
+    status: "Em Obras",
+    image: portalDoBuritis,
   },
 ];
 
