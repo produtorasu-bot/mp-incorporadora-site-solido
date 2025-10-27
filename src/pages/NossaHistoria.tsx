@@ -5,21 +5,21 @@ const NossaHistoria = () => {
   const timeline = [
     {
       year: "2013",
-      title: "A Gênese",
-      description: "A MP Incorporadora foi fundada em 2013, inserindo-se no dinâmico mercado de habitação de Itumbiara, Goiás. O objetivo era claro: oferecer soluções de moradia que aliassem qualidade e acessibilidade.",
+      title: "Nosso Início",
+      description: "A MP Incorporadora foi fundada em 2013 em Itumbiara, Goiás, com um objetivo claro: oferecer moradias de qualidade com preços acessíveis para a comunidade local.",
       icon: Building2,
     },
     {
       year: "2013-2018",
-      title: "Fase 1 - A Base Sólida",
-      subtitle: "Habitação Popular",
-      description: "Nos primeiros anos, concentramos nossos esforços no segmento de empreendimentos populares. Esta fase foi crucial para construir nossa reputação, entregando centenas de unidades habitacionais e estabelecendo um relacionamento de confiança com a comunidade local. Este histórico é a prova do nosso compromisso de longa data e capacidade de entrega.",
+      title: "Construindo Confiança",
+      subtitle: "Primeiros Anos",
+      description: "Nos primeiros anos, focamos em empreendimentos populares. Entregamos centenas de unidades habitacionais e construímos um relacionamento sólido de confiança com nossos clientes e com a comunidade de Itumbiara.",
       icon: Users,
     },
     {
       year: "2019-Presente",
-      title: "Fase 2 - Expansão Estratégica",
-      description: "Com uma reputação estabelecida, iniciamos uma expansão deliberada para os segmentos de alto e médio padrão. Um marco foi nossa incursão em condomínios verticais multifamiliares, demonstrando nossa capacidade de gerir projetos de nível superior de complexidade técnica e financeira.",
+      title: "Crescimento e Evolução",
+      description: "Com a confiança conquistada, expandimos nossa atuação para imóveis de médio e alto padrão. Hoje, trabalhamos também com condomínios verticais, oferecendo mais opções para diferentes perfis de clientes.",
       icon: TrendingUp,
     },
   ];
