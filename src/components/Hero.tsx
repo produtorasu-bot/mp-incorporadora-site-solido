@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         <div className="max-w-4xl mx-auto">
           {/* Logo */}
-          <div className="mb-6 sm:mb-8 animate-fade-in flex justify-center">
+          <div className="mb-6 sm:mb-8 flex justify-center">
             <div className="glass-card p-3 sm:p-4 rounded-2xl">
               <img 
                 src={logo} 
