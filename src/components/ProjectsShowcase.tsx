@@ -40,8 +40,8 @@ const projects: Project[] = [
   {
     id: 4,
     title: "Portal do Buritis",
-    description: "Empreendimento moderno com apartamentos e casas de alto padrão.",
-    status: "Em Obras",
+    description: "Empreendimento com apartamentos modernos em condomínio fechado com portaria 24 horas",
+    status: "Obra entregue",
     image: portalDoBuritis,
   },
 ];
