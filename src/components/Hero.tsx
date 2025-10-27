@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Building2, Award, Users } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Hero = () => {
@@ -36,29 +36,13 @@ const Hero = () => {
             Desde 2013, sinônimo de excelência e inovação em empreendimentos imobiliários.
           </p>
 
-          {/* Feature Pills */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12 animate-fade-in-up animation-delay-200">
-            <div className="glass px-6 py-3 rounded-full flex items-center gap-2 text-white">
-              <Building2 className="w-5 h-5" />
-              <span className="font-medium">Projetos de Qualidade</span>
-            </div>
-            <div className="glass px-6 py-3 rounded-full flex items-center gap-2 text-white">
-              <Award className="w-5 h-5" />
-              <span className="font-medium">Excelência Garantida</span>
-            </div>
-            <div className="glass px-6 py-3 rounded-full flex items-center gap-2 text-white">
-              <Users className="w-5 h-5" />
-              <span className="font-medium">Atendimento Personalizado</span>
-            </div>
-          </div>
-
           {/* CTA Button */}
           <div className="animate-fade-in-up animation-delay-400 flex justify-center">
             <Button 
               size="lg" 
               className="group text-lg px-10 py-7 bg-white text-primary hover:bg-white/90 transition-all duration-300 hover:scale-105 shadow-elegant rounded-full font-semibold"
             >
-              Conheça os empreendimentos
+              Conheça nossa história e empreendimentos
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
