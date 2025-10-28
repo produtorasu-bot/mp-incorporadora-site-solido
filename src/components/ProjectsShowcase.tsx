@@ -1,6 +1,6 @@
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import liberdade15 from "@/assets/liberdade-15.jpg";
+import liberdade15Image from "@/assets/liberdade-15.jpg";
 import housingParanaiba from "@/assets/housing-paranaiba-entrance.jpg";
 import residencialJardimEuropa from "@/assets/residencial-jardim-europa.jpg";
 import portalDoBuritis from "@/assets/portal-do-buritis.jpg";
@@ -42,7 +42,7 @@ const projects: Project[] = [
     title: "Residencial Liberdade 15",
     description: "Sua casa na planta com a qualidade da MP Incorporadora.",
     status: "Em Oferta",
-    image: liberdade15,
+    image: liberdade15Image,
   },
 ];
 
@@ -72,13 +72,7 @@ const ProjectsShowcase = () => {
                   className="group overflow-hidden hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 bg-card border-border h-full"
                 >
                   <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
-                    {isLiberdade15 ? (
-                      <div className="w-full h-full bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center p-6 sm:p-8">
-                        <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center leading-tight">
-                          Residencial<br />Liberdade 15
-                        </h3>
-                      </div>
-                    ) : projectLink ? (
+                    {projectLink ? (
                       <a href={projectLink} target="_blank" rel="noopener noreferrer" className="block w-full h-full" aria-label={`Visite o site do ${project.title}`}>
                         <img 
                           src={project.image} 
