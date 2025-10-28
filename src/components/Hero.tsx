@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import logo from "@/assets/logo.png";
-import arianaHero from "@/assets/ariana-hero.jpg";
+import heroEmpreendimento from "@/assets/hero-empreendimento.jpg";
 
 const Hero = () => {
   return (
@@ -9,8 +9,8 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0" aria-hidden="true">
         <img 
-          src={arianaHero} 
-          alt="" 
+          src={heroEmpreendimento} 
+          alt="Empreendimento MP Incorporadora" 
           className="w-full h-full object-cover object-center"
         />
         {/* Gradient Overlay */}
