@@ -41,7 +41,7 @@ const projects: Project[] = [
     id: 1,
     title: "Residencial Liberdade 15",
     description: "Sua casa na planta com a qualidade da MP Incorporadora.",
-    status: "Obra entregue",
+    status: "Em Oferta",
     image: liberdade15Image,
   },
 ];

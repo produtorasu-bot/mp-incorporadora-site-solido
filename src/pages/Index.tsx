@@ -2,7 +2,6 @@ import Hero from "@/components/Hero";
 import ProjectsShowcase from "@/components/ProjectsShowcase";
 import OurJourney from "@/components/OurJourney";
 import OurCommitment from "@/components/OurCommitment";
-import PersonaSection from "@/components/PersonaSection";
 import FinalCTA from "@/components/FinalCTA";
 
 const Index = () => {
@@ -12,7 +11,6 @@ const Index = () => {
       <ProjectsShowcase />
       <OurJourney />
       <OurCommitment />
-      <PersonaSection />
       <FinalCTA />
     </main>
   );
