@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import logo from "@/assets/logo-mp.png";
+import logo from "@/assets/logo-hd.png";
 import heroEmpreendimento from "@/assets/hero-empreendimento.jpg";
 
 const Hero = () => {
@@ -32,7 +32,7 @@ const Hero = () => {
               <img 
                 src={logo} 
                 alt="MP Incorporadora - Empreendimentos Imobiliários em Itumbiara-GO" 
-                className="h-12 sm:h-16 lg:h-20 w-auto" 
+                className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32 w-auto object-contain" 
                 width="auto"
                 height="80"
               />
