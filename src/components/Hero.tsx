@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-hd.png";
 import heroEmpreendimento from "@/assets/hero-empreendimento.jpg";
 
 const Hero = () => {
@@ -14,7 +14,7 @@ const Hero = () => {
           className="w-full h-full object-cover object-center"
         />
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1A4FA8]/65 via-[#2763C4]/60 to-[#2763C4]/55" />
       </div>
       
       {/* Decorative Elements */}
