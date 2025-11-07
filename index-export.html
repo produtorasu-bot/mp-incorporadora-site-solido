@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MP Incorporadora - Desde 2013, sinônimo de excelência e inovação em empreendimentos imobiliários em Itumbiara-GO. Conheça nossos projetos residenciais de médio e alto padrão.">
+    <meta name="keywords" content="MP Incorporadora, empreendimentos imobiliários, Itumbiara, Goiás, imóveis, apartamentos, casas, condomínio">
+    <meta name="author" content="MP Incorporadora">
+    <meta name="robots" content="index, follow">
+    
+    <title>MP Incorporadora - Empreendimentos Imobiliários em Itumbiara-GO</title>
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="MP Incorporadora - Empreendimentos Imobiliários">
+    <meta property="og:description" content="Desde 2013, sinônimo de excelência e inovação em empreendimentos imobiliários em Itumbiara-GO">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --background: hsl(0, 0%, 100%);
+            --foreground: hsl(210, 15%, 20%);
+            --card: hsl(0, 0%, 100%);
+            --card-foreground: hsl(210, 15%, 20%);
+            --primary: hsl(215, 70%, 35%);
+            --primary-foreground: hsl(0, 0%, 100%);
+            --secondary: hsl(210, 25%, 92%);
+            --secondary-foreground: hsl(210, 15%, 20%);
+            --muted: hsl(210, 20%, 96%);
+            --muted-foreground: hsl(210, 10%, 50%);
+            --accent: hsl(215, 85%, 45%);
+            --accent-foreground: hsl(0, 0%, 100%);
+            --border: hsl(210, 20%, 90%);
+            --radius: 1rem;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background: var(--background);
+            color: var(--foreground);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-background {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+
+        .hero-background img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right, 
+                hsla(215, 70%, 35%, 0.65),
+                hsla(215, 85%, 45%, 0.60),
+                hsla(215, 85%, 45%, 0.55));
+        }
+
+        .hero-decorative {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .hero-decorative-circle-1 {
+            position: absolute;
+            top: 5rem;
+            right: 5rem;
+            width: 24rem;
+            height: 24rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            filter: blur(60px);
+        }
+
+        .hero-decorative-circle-2 {
+            position: absolute;
+            bottom: 5rem;
+            left: 5rem;
+            width: 20rem;
+            height: 20rem;
+            background: hsla(215, 85%, 45%, 0.1);
+            border-radius: 50%;
+            filter: blur(60px);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            padding: 4rem 1rem;
+            text-align: center;
+            max-width: 64rem;
+            margin: 0 auto;
+        }
+
+        .logo-container {
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 1rem;
+            border-radius: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+
+        .hero-logo {
+            height: 5rem;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 3rem;
+            max-width: 42rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-button {
+            display: inline-block;
+            padding: 1.5rem 3rem;
+            background: white;
+            color: var(--primary);
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 9999px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 20px 40px -15px hsla(215, 70%, 35%, 0.3);
+        }
+
+        .hero-button:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Projects Section */
+        .projects-section {
+            padding: 5rem 1rem;
+            background: var(--secondary);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--foreground);
+            margin-bottom: 1rem;
+        }
+
+        .section-divider {
+            width: 6rem;
+            height: 0.25rem;
+            background: var(--primary);
+            margin: 0 auto;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 90rem;
+            margin: 0 auto;
+        }
+
+        .project-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-0.5rem);
+            box-shadow: 0 20px 40px -15px hsla(215, 70%, 35%, 0.3);
+        }
+
+        .project-image-container {
+            position: relative;
+            height: 16rem;
+            overflow: hidden;
+        }
+
+        .project-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: hsla(215, 70%, 35%, 0.9);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            backdrop-filter: blur(4px);
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--foreground);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-title a {
+            color: var(--foreground);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .project-title a:hover {
+            color: var(--primary);
+        }
+
+        .project-description {
+            font-size: 1rem;
+            color: var(--muted-foreground);
+        }
+
+        /* Journey Section */
+        .journey-section {
+            padding: 5rem 1rem;
+            background: linear-gradient(to bottom, var(--secondary), var(--background));
+        }
+
+        .journey-container {
+            max-width: 80rem;
+            margin: 0 auto;
+        }
+
+        .journey-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .journey-badge-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .journey-badge {
+            background: linear-gradient(135deg, var(--accent), var(--primary));
+            color: white;
+            border-radius: 1rem;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: 0 20px 40px -15px hsla(215, 70%, 35%, 0.3);
+        }
+
+        .journey-years {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .journey-experience {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .journey-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .journey-text {
+            font-size: 1.125rem;
+            color: var(--muted-foreground);
+            line-height: 1.7;
+        }
+
+        .journey-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--primary);
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            align-self: flex-start;
+        }
+
+        .journey-button:hover {
+            background: var(--accent);
+        }
+
+        /* Commitment Section */
+        .commitment-section {
+            padding: 5rem 1rem;
+            background: var(--background);
+        }
+
+        .commitment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 75rem;
+            margin: 0 auto;
+        }
+
+        .commitment-card {
+            padding: 2rem;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .commitment-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 20px 40px -15px hsla(215, 70%, 35%, 0.3);
+        }
+
+        .commitment-icon {
+            width: 4rem;
+            height: 4rem;
+            background: hsla(215, 70%, 35%, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            transition: background 0.3s ease;
+        }
+
+        .commitment-card:hover .commitment-icon {
+            background: hsla(215, 70%, 35%, 0.2);
+        }
+
+        .commitment-icon svg {
+            width: 2rem;
+            height: 2rem;
+            stroke: var(--primary);
+            fill: none;
+            stroke-width: 2;
+        }
+
+        .commitment-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--foreground);
+            margin-bottom: 1rem;
+        }
+
+        .commitment-description {
+            font-size: 1rem;
+            color: var(--muted-foreground);
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 5rem 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-decorative {
+            position: absolute;
+            inset: 0;
+            opacity: 0.1;
+        }
+
+        .cta-decorative-circle-1 {
+            position: absolute;
+            top: 2.5rem;
+            left: 2.5rem;
+            width: 16rem;
+            height: 16rem;
+            background: white;
+            border-radius: 50%;
+            filter: blur(60px);
+        }
+
+        .cta-decorative-circle-2 {
+            position: absolute;
+            bottom: 2.5rem;
+            right: 2.5rem;
+            width: 24rem;
+            height: 24rem;
+            background: white;
+            border-radius: 50%;
+            filter: blur(60px);
+        }
+
+        .cta-content {
+            max-width: 64rem;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .cta-header {
+            margin-bottom: 3rem;
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-subtitle {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 42rem;
+            margin: 0 auto;
+        }
+
+        .cta-button-container {
+            margin-bottom: 4rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1.5rem 3rem;
+            background: white;
+            color: var(--primary);
+            font-size: 1.125rem;
+            font-weight: 600;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-icon {
+            width: 2rem;
+            height: 2rem;
+            stroke: white;
+            fill: none;
+            stroke-width: 2;
+        }
+
+        .contact-label {
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .contact-value {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-value:hover {
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 640px) {
+            .hero-logo {
+                height: 6rem;
+            }
+            .hero-title {
+                font-size: 4rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-logo {
+                height: 7rem;
+            }
+            .hero-title {
+                font-size: 5rem;
+            }
+            .journey-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .journey-badge-container {
+                order: 2;
+            }
+            .journey-content {
+                order: 1;
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .hero-logo {
+                height: 8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-background">
+                <img src="src/assets/hero-empreendimento.jpg" alt="Empreendimento MP Incorporadora">
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="hero-decorative">
+                <div class="hero-decorative-circle-1"></div>
+                <div class="hero-decorative-circle-2"></div>
+            </div>
+
+            <div class="hero-content">
+                <div class="logo-container">
+                    <div class="logo-card">
+                        <img src="src/assets/logo-hd.png" alt="MP Incorporadora - Empreendimentos Imobiliários em Itumbiara-GO" class="hero-logo">
+                    </div>
+                </div>
+
+                <h1 class="hero-title">MP Incorporadora</h1>
+
+                <p class="hero-subtitle">
+                    Desde 2013, sinônimo de excelência e inovação em empreendimentos imobiliários.
+                </p>
+
+                <a href="#empreendimentos" class="hero-button">
+                    Conheça nossa história e empreendimentos
+                </a>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section id="empreendimentos" class="projects-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Empreendimentos pensados para você</h2>
+                    <div class="section-divider"></div>
+                </header>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Housing Paranaíba -->
+                    <article class="project-card">
+                        <div class="project-image-container">
+                            <a href="https://housingparanaiba.com.br" target="_blank" rel="noopener noreferrer">
+                                <img src="src/assets/housing-paranaiba-entrance.jpg" alt="Imagem do empreendimento Housing Paranaíba em Itumbiara-GO" class="project-image">
+                            </a>
+                            <span class="project-badge">Oportunidade</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">
+                                <a href="https://housingparanaiba.com.br" target="_blank" rel="noopener noreferrer">Housing Paranaíba</a>
+                            </h3>
+                            <p class="project-description">
+                                Condomínio Fechado de Casas Prontas mais próximo do centro de Itumbiara-GO
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Residencial Jardim Europa -->
+                    <article class="project-card">
+                        <div class="project-image-container">
+                            <img src="src/assets/residencial-jardim-europa.jpg" alt="Imagem do empreendimento Residencial Jardim Europa em Itumbiara-GO" class="project-image">
+                            <span class="project-badge">Obra entregue</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Residencial Jardim Europa</h3>
+                            <p class="project-description">
+                                Um novo padrão de qualidade de vida com infraestrutura completa.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Portal do Buritis -->
+                    <article class="project-card">
+                        <div class="project-image-container">
+                            <img src="src/assets/portal-do-buritis.jpg" alt="Imagem do empreendimento Portal do Buritis em Itumbiara-GO" class="project-image">
+                            <span class="project-badge">Obra entregue</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Portal do Buritis</h3>
+                            <p class="project-description">
+                                Empreendimento com apartamentos modernos em condomínio fechado com portaria 24 horas
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Residencial Liberdade 15 -->
+                    <article class="project-card">
+                        <div class="project-image-container">
+                            <img src="src/assets/liberdade-15.jpg" alt="Imagem do empreendimento Residencial Liberdade 15 em Itumbiara-GO" class="project-image">
+                            <span class="project-badge">Em Oferta</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Residencial Liberdade 15</h3>
+                            <p class="project-description">
+                                Sua casa na planta com a qualidade da MP Incorporadora.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Section -->
+        <section class="journey-section">
+            <div class="container">
+                <div class="journey-container">
+                    <div class="journey-grid">
+                        <div class="journey-badge-container">
+                            <div class="journey-badge">
+                                <div class="journey-years">10+</div>
+                                <div class="journey-experience">Anos de Experiência</div>
+                            </div>
+                        </div>
+
+                        <div class="journey-content">
+                            <header>
+                                <h2 class="section-title" style="text-align: left;">Mais de uma década de evolução</h2>
+                                <div class="section-divider" style="margin-left: 0;"></div>
+                            </header>
+
+                            <p class="journey-text">
+                                Nossa jornada começou em <strong>2013</strong>, construindo uma base sólida de confiança 
+                                com a entrega de <strong>centenas de unidades habitacionais</strong> no segmento popular.
+                            </p>
+
+                            <p class="journey-text">
+                                Hoje, evoluímos estrategicamente para os segmentos de <strong>médio e alto padrão</strong>, 
+                                incluindo <strong>condomínios verticais multifamiliares</strong>.
+                            </p>
+
+                            <div style="padding-top: 1rem;">
+                                <a href="/nossa-historia" class="journey-button">
+                                    Conheça nossa história
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Commitment Section -->
+        <section class="commitment-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">O alicerce do nosso sucesso</h2>
+                    <div class="section-divider"></div>
+                </header>
+
+                <div class="commitment-grid">
+                    <!-- Mission -->
+                    <article class="commitment-card">
+                        <div class="commitment-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+                            </svg>
+                        </div>
+                        <h3 class="commitment-title">Missão</h3>
+                        <p class="commitment-description">
+                            Buscar excelência na construção e comercialização de empreendimentos, superando as expectativas dos nossos clientes.
+                        </p>
+                    </article>
+
+                    <!-- Values -->
+                    <article class="commitment-card">
+                        <div class="commitment-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                        </div>
+                        <h3 class="commitment-title">Valores</h3>
+                        <p class="commitment-description">
+                            Sustentabilidade, Excelência e Respeito guiam cada decisão e cada projeto que realizamos.
+                        </p>
+                    </article>
+
+                    <!-- Quality Policy -->
+                    <article class="commitment-card">
+                        <div class="commitment-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+                                <path d="M4 22h16"/>
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/>
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/>
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="commitment-title">Política de Qualidade</h3>
+                        <p class="commitment-description">
+                            Construir obras com qualidade, alcançando a satisfação dos nossos clientes por meio da melhoria contínua dos processos e do comprometimento de toda a equipe.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="cta-section">
+            <div class="cta-decorative">
+                <div class="cta-decorative-circle-1"></div>
+                <div class="cta-decorative-circle-2"></div>
+            </div>
+
+            <div class="container">
+                <div class="cta-content">
+                    <header class="cta-header">
+                        <h2 class="cta-title">Encontre o seu lugar ideal</h2>
+                        <p class="cta-subtitle">
+                            Fale com nossa equipe de especialistas e descubra o projeto da MP Incorporadora 
+                            que mais combina com você.
+                        </p>
+                    </header>
+
+                    <div class="cta-button-container">
+                        <a href="https://wa.me/5564992433094?text=Oi,%20vim%20do%20site%20da%20MP%20e%20quero%20conhecer%20os%20empreendimentos!" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="cta-button">
+                            Fale com um consultor
+                        </a>
+                    </div>
+
+                    <footer class="contact-info">
+                        <address class="contact-item" style="font-style: normal;">
+                            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <div class="contact-label">Telefone</div>
+                            <a href="tel:+5564992433094" class="contact-value">(64) 9 9243-3094</a>
+                        </address>
+
+                        <address class="contact-item" style="font-style: normal;">
+                            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                            </svg>
+                            <div class="contact-label">E-mail</div>
+                            <a href="mailto:comercial@mpincorporadora.com.br" class="contact-value">comercial@mpincorporadora.com.br</a>
+                        </address>
+
+                        <address class="contact-item" style="font-style: normal;">
+                            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <div class="contact-label">Localização</div>
+                            <div class="contact-value" style="text-align: center;">
+                                Avenida Osvaldo Cruz, Sala 85<br>
+                                Setor Rodoviário, Afonso Pena<br>
+                                Itumbiara, Goiás
+                            </div>
+                        </address>
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
