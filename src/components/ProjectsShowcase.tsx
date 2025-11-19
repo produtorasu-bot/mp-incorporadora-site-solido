@@ -78,7 +78,10 @@ const ProjectsShowcase = () => {
                           src={project.image} 
                           alt={`Imagem do empreendimento ${project.title} em Itumbiara-GO`}
                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                          width="400"
+                          height="300"
                           loading="lazy"
+                          decoding="async"
                         />
                       </a>
                     ) : (
@@ -86,7 +89,10 @@ const ProjectsShowcase = () => {
                         src={project.image} 
                         alt={`Imagem do empreendimento ${project.title} em Itumbiara-GO`}
                         className="w-full h-full object-cover transition-transform duration-500"
+                        width="400"
+                        height="300"
                         loading="lazy"
+                        decoding="async"
                       />
                     )}
                     <Badge className="absolute top-4 right-4 bg-primary/90 backdrop-blur-sm text-xs sm:text-sm">
