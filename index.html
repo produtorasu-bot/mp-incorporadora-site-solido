@@ -30,10 +30,18 @@
     <meta property="twitter:description" content="Há mais de 10 anos construindo sonhos em Itumbiara-GO." />
     <meta property="twitter:image" content="https://mpincorporadora.com.br/og-image.jpg" />
     
-    <!-- Fonts -->
+    <!-- Preload LCP Image -->
+    <link rel="preload" as="image" href="/src/assets/hero-empreendimento.jpg" fetchpriority="high">
+    
+    <!-- Fonts - optimized with swap -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Critical CSS inline -->
+    <style>
+      *{border-color:hsl(var(--border))}body{background:hsl(var(--background));color:hsl(var(--foreground));font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto',sans-serif}:root{--background:0 0% 100%;--foreground:210 15% 20%;--primary:215 70% 35%;--primary-foreground:0 0% 100%;--secondary:210 25% 92%;--accent:215 85% 45%;--border:210 20% 90%;--radius:1rem;--shadow-elegant:0 20px 40px -15px hsl(215 70% 35% / 0.3)}
+    </style>
     
     <!-- Structured Data - Organization -->
     <script type="application/ld+json">

@@ -6,12 +6,16 @@ import heroEmpreendimento from "@/assets/hero-empreendimento.jpg";
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+      {/* Background Image - LCP optimized */}
       <div className="absolute inset-0" aria-hidden="true">
         <img 
           src={heroEmpreendimento} 
           alt="Empreendimento MP Incorporadora" 
           className="w-full h-full object-cover object-center"
+          width="1920"
+          height="1080"
+          fetchPriority="high"
+          decoding="async"
         />
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#1A4FA8]/65 via-[#2763C4]/60 to-[#2763C4]/55" />
@@ -33,8 +37,10 @@ const Hero = () => {
                 src={logo} 
                 alt="MP Incorporadora - Empreendimentos Imobiliários em Itumbiara-GO" 
                 className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32 w-auto object-contain" 
-                width="auto"
+                width="200"
                 height="80"
+                loading="eager"
+                decoding="async"
               />
             </div>
           </div>
